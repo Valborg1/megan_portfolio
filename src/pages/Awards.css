@@ -1,0 +1,8 @@
+img.transparent-image-mountain {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }

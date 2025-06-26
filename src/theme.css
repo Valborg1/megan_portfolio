@@ -1,0 +1,18 @@
+:root {
+    --primary: #B5838D;
+    --secondary: #6D6875;
+    --background: #FFF1E6;
+    --accent1: #A3C4BC;
+    --accent2: #FFCDB2;
+    --text-dark: #2E2E2E;
+    --text-light: #FFFFFF;
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--text-dark);
+    font-family: 'Georgia', serif;
+  }
+
+  
+  

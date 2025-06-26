@@ -1,0 +1,37 @@
+.home-hero {
+  min-height: 100vh;
+  background-color: var(--background);
+  padding-bottom: 5rem;
+  font-family: 'Georgia', serif;
+  padding-top: 2rem;;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: var(--primary);
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+}
+
+.home-hero .lead {
+  font-size: 1.2rem;
+  color: var(--secondary);
+}
+
+.home-hero p {
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.home-image {
+  width: 70%;
+  height: auto;
+  max-height: 750px;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
