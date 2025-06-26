@@ -31,36 +31,41 @@ function Contact() {
               {submitted ? (
                 <p className="mb-0">Thanks for reaching out! We'll be in touch soon.</p>
               ) : (
-                <Form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit}>
-                  <input type="hidden" name="form-name" value="contact" />
-                  <p style={{ display: 'none' }}>
-                    <label>
-                      Don’t fill this out: <input name="bot-field" />
-                    </label>
-                  </p>
+                <Form
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
+                    data-netlify-honeypot="bot-field"
+                    >
+                    <input type="hidden" name="form-name" value="contact" />
+                    <input type="hidden" name="bot-field" />
 
-                  <Form.Group className="mb-3" controlId="formName">
-                    <Form.Label>Your Name</Form.Label>
-                    <Form.Control type="text" name="name" required />
-                  </Form.Group>
+                    <Form.Group className="mb-3" controlId="formName">
+                        <Form.Label>Your Name</Form.Label>
+                        <Form.Control type="text" name="name" required />
+                    </Form.Group>
 
-                  <Form.Group className="mb-3" controlId="formEmail">
-                    <Form.Label>Your Email</Form.Label>
-                    <Form.Control type="email" name="email" required />
-                  </Form.Group>
+                    <Form.Group className="mb-3" controlId="formEmail">
+                        <Form.Label>Your Email</Form.Label>
+                        <Form.Control type="email" name="email" required />
+                    </Form.Group>
 
-                  <Form.Group className="mb-3" controlId="formMessage">
-                    <Form.Label>Message</Form.Label>
-                    <Form.Control as="textarea" rows={5} name="message" required />
-                  </Form.Group>
+                    <Form.Group className="mb-3" controlId="formMessage">
+                        <Form.Label>Message</Form.Label>
+                        <Form.Control as="textarea" rows={5} name="message" required />
+                    </Form.Group>
 
-                  <Button
-                    style={{ backgroundColor: 'var(--primary)', borderColor: 'var(--primary)' }}
-                    type="submit"
-                  >
-                    Send
-                  </Button>
-                </Form>
+                    <Button
+                        style={{
+                        backgroundColor: 'var(--primary)',
+                        borderColor: 'var(--primary)'
+                        }}
+                        type="submit"
+                    >
+                        Send
+                    </Button>
+                    </Form>
+
               )}
             </Card>
           </Col>
